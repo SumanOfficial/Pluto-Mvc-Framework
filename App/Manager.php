@@ -1,5 +1,13 @@
 <?php
-// including the Core Libraies
-include_once "libraries/Core.php";
-include_once "libraries/Controller.php";
-include_once "libraries/Database.php";
+
+// include the Config 
+require_once 'config/config.php';
+
+/*
+ * AUTO LOADER
+ * LOAD THE CORE LIBERIES
+*/
+
+spl_autoload_register(function ($classname) {
+    include_once "libraries/" . $classname . ".php";
+});

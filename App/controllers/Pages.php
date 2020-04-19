@@ -1,6 +1,6 @@
 <?php
 
-class Pages
+class Pages extends Controller
 {
     public function __construct()
     {
@@ -10,5 +10,9 @@ class Pages
     public function index()
     {
         echo "This is the index function </br>";
+    }
+    public function about()
+    {
+        $this->view('About');
     }
 }
