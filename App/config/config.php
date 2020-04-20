@@ -8,6 +8,6 @@
 // APPROOT
 define('APPROOT', dirname(dirname(__FILE__)));
 // URLROOT
-define('URLROOT', 'http://localhost/pluto/');
+define('URLROOT', 'http://localhost/Pluto-Mvc-Framework');
 // SITENAME
-define('SITENAME', 'PLUTO MVC');
+define('SITENAME', 'Pluto MVC');

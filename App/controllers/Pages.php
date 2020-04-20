@@ -8,6 +8,9 @@ class Pages extends Controller
 
     public function index()
     {
-        echo "This is the index function </br>";
+        $data = [
+            'title' => 'Pluto MVC'
+        ];
+        $this->view('/pages/index', $data);
     }
 }
