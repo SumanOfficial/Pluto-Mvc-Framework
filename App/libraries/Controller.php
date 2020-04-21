@@ -5,7 +5,7 @@ class Controller
     // loading the model
     public function model($model)
     {
-        require_once '../App/model/' . $model . '.php';
+        require_once '../App/models/' . $model . '.php';
         // instanciate the model 
         return new $model();
     }
